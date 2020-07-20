@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ti17m006/graphql_net.git"
+    "url": "git@github.com:ti17m006/graphql_net.git"
   },
   "keywords": [
     "GraphQL",
