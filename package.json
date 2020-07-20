@@ -1,0 +1,23 @@
+{
+  "name": "graphql_net",
+  "version": "1.0.0",
+  "description": "The Net Ninja - GraphQL Tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ti17m006/graphql_net.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Express.js"
+  ],
+  "author": "Damjan Ivanovic",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/ti17m006/graphql_net/issues"
+  },
+  "homepage": "https://github.com/ti17m006/graphql_net#readme"
+}
