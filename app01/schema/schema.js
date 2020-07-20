@@ -1,4 +1,4 @@
-const { GraphQLSchema, GraphQLObjectType, GraphQLInt, GraphQLString } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString } = require('graphql');
 const _ = require('lodash');
 const ManagerModel = require('./manager_type').Manager;
 
@@ -9,7 +9,7 @@ const managers = [
     { id: 4, fullname: "Jacob Davis", username: "jdavis", password: "qwerty" }
 ];
 
-const ManagerType = new GraphQLObjectType(ManagerModel(GraphQLInt, GraphQLString));
+const ManagerType = new GraphQLObjectType(ManagerModel(GraphQLID, GraphQLString));
 
 const RootQuery = new GraphQLObjectType({
     name: "RootQueryType",
@@ -18,7 +18,7 @@ const RootQuery = new GraphQLObjectType({
             type: ManagerType,
             args: {
                 id: {
-                    type: GraphQLInt
+                    type: GraphQLID
                 }
             },
             resolve(parent, args) {
