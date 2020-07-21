@@ -1,4 +1,4 @@
-const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString, GraphQLInputObjectType } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString } = require('graphql');
 const _ = require('lodash');
 const { Managers, Workers } = require('./data');
 const { ManagerSchema, WorkerSchema } = require('./model-schemas');
