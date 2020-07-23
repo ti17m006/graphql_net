@@ -22,7 +22,7 @@ const RootQuery = new GraphQLObjectType({
             type: WorkerType,
             args: { id: { type: GraphQLID } },
             resolve(parents, args) {
-                return _find(Workers, { id: args.id });
+                return _.find(Workers, { id: args.id });
             }
         }
     })
