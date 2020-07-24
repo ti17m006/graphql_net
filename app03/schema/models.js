@@ -1,30 +1,59 @@
-module.exports.Manager = (id, string) => {
+const {
+    GraphQLObjectType,
+    GraphQLID,
+    GraphQLString,
+    GraphQLList
+} = require('graphql');
+
+const Manager = () => {
     return {
         name: 'Manager',
         fields: () => ({
-            id: { type: id },
-            fullname: { type: string },
-            username: { type: string },
-            password: { type: string }
+            id: { type: GraphQLID },
+            fullname: { type: GraphQLString },
+            username: { type: GraphQLString },
+            password: { type: GraphQLString }
         })
     };
 };
 
-module.exports.Worker = (id, string) => {
+const Worker = () => {
     return {
         name: 'Worker',
         fields: () => ({
-            id: { type: id },
-            fullname: { type: string },
-            username: { type: string },
-            password: { type: string }
+            id: { type: GraphQLID },
+            fullname: { type: GraphQLString },
+            username: { type: GraphQLString },
+            password: { type: GraphQLString }
         })
     };
 };
 
-module.exports.Geolocation = () => {
+const Location = () => {
     return {
-        name: 'Geolocation',
-        fields: () => ({})
+        name: 'Location',
+        fields: () => ({
+            longitude: { type: GraphQLString },
+            latitude: { type: GraphQLString }
+        })
     };
 };
+
+const Geo = () => {
+    return {
+        name: 'Geo',
+        fields: () => ({
+            id: { type: GraphQLID },
+            worker_id: { type: GraphQLID },
+            geo: { type: new GraphQLList(new GraphQLObjectType(Location(GraphQLString))) }
+        })
+    };
+}
+
+module.exports.ManagerType = new GraphQLObjectType(Manager());
+
+module.exports.WorkerType = new GraphQLObjectType(Worker());
+
+// const LocationType = new GraphQLList(new GraphQLObjectType(Location(GraphQLString)));
+
+module.exports.GeoType = new GraphQLObjectType(Geo());

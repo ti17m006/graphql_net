@@ -1,12 +1,7 @@
 const _ = require('lodash');
-const { Managers, Workers } = require('./data');
-
-const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString } = require('graphql');
-
-const { Manager, Worker, Geolocation } = require('./models');
-
-const ManagerType = new GraphQLObjectType(Manager(GraphQLID, GraphQLString));
-const WorkerType = new GraphQLObjectType(Worker(GraphQLID, GraphQLString));
+const { Managers, Workers, Geolocation01 } = require('./data');
+const { GraphQLSchema, GraphQLObjectType, GraphQLID } = require('graphql');
+const { ManagerType, WorkerType, GeoType } = require('./models');
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
@@ -21,8 +16,15 @@ const RootQuery = new GraphQLObjectType({
         worker: {
             type: WorkerType,
             args: { id: { type: GraphQLID } },
-            resolve(parents, args) {
-                return _.find(Workers, { id: args.id });
+            resolve(parent, args) {
+                return _.find(Workers, { id: parseInt(args.id) });
+            }
+        },
+        geolocation: {
+            type: GeoType,
+            args: { worker_id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return _.find(Geolocation01, { worker_id: parseInt(args.worker_id) });
             }
         }
     })
