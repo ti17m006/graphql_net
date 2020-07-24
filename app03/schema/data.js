@@ -19,6 +19,10 @@ module.exports.Workers = [
 ]
 
 module.exports.Geolocation01 = [
+    {
+        id: 1,
+        worker_id: 1
+    },
     [
         16.51296615600586,
         48.21357825922427
@@ -34,7 +38,14 @@ module.exports.Geolocation01 = [
     [
         16.51373863220215,
         48.211404849620486
-    ],
+    ]
+]
+
+module.exports.Geolocation02 = [
+    {
+        id: 2,
+        worker_id: 1
+    },
     [
         16.51356697082519,
         48.21014651768588
@@ -54,7 +65,13 @@ module.exports.Geolocation01 = [
     [
         16.51270866394043,
         48.20511288074166
-    ],
+    ]
+]
+module.exports.Geolocation03 = [
+    {
+        id: 3,
+        worker_id: 1
+    },
     [
         16.512622833251953,
         48.20431202924946
@@ -74,7 +91,13 @@ module.exports.Geolocation01 = [
     [
         16.513996124267578,
         48.20293911184484
-    ],
+    ]
+]
+module.exports.Geolocation04 = [
+    {
+        id: 4,
+        worker_id: 1
+    },
     [
         16.514081954956055,
         48.20391159880771
@@ -101,7 +124,16 @@ module.exports.Geolocation01 = [
     ]
 ];
 
-module.exports.Geolocation02 = [
+/**
+ * 
+ */
+
+
+module.exports.Geolocation05 = [
+    {
+        id: 5,
+        worker_id: 2
+    },
     [
         16.514596939086914,
         48.20751536008785
@@ -121,7 +153,13 @@ module.exports.Geolocation02 = [
     [
         16.51466131210327,
         48.20891675433003
-    ],
+    ]
+]
+module.exports.Geolocation06 = [
+    {
+        id: 6,
+        worker_id: 2
+    },
     [
         16.514596939086914,
         48.20921704810717
@@ -141,7 +179,13 @@ module.exports.Geolocation02 = [
     [
         16.51494026184082,
         48.21097587629835
-    ],
+    ]
+]
+module.exports.Geolocation07 = [
+    {
+        id: 7,
+        worker_id: 2
+    },
     [
         16.51496171951294,
         48.211333354316345
@@ -161,7 +205,13 @@ module.exports.Geolocation02 = [
     [
         16.516013145446777,
         48.21086148280553
-    ],
+    ]
+]
+module.exports.Geolocation08 = [
+    {
+        id: 8,
+        worker_id: 2
+    },
     [
         16.51594877243042,
         48.21064699431776
@@ -185,7 +235,13 @@ module.exports.Geolocation02 = [
     [
         16.515820026397705,
         48.20841626078854
-    ],
+    ]
+]
+module.exports.Geolocation09 = [
+    {
+        id: 9,
+        worker_id: 2
+    },
     [
         16.51569128036499,
         48.2078299621333
@@ -213,7 +269,13 @@ module.exports.Geolocation02 = [
     [
         16.515026092529297,
         48.203325248584285
-    ],
+    ]
+]
+module.exports.Geolocation10 = [
+    {
+        id: 10,
+        worker_id: 3
+    },
     [
         16.515798568725586,
         48.20318223531648
@@ -237,7 +299,14 @@ module.exports.Geolocation02 = [
     [
         16.515820026397705,
         48.20421192193251
-    ],
+    ]
+]
+
+module.exports.Geolocation11 = [
+    {
+        id: 11,
+        worker_id: 3
+    },
     [
         16.515047550201412,
         48.2042548250923
@@ -257,7 +326,13 @@ module.exports.Geolocation02 = [
     [
         16.517322063446045,
         48.20667164506132
-    ],
+    ]
+]
+module.exports.Geolocation12 = [
+    {
+        id: 12,
+        worker_id: 3
+    },
     [
         16.517386436462402,
         48.20741525903174
@@ -270,6 +345,18 @@ module.exports.Geolocation02 = [
         16.51747226715088,
         48.20844486055124
     ],
+]
+
+/**
+ * 
+ */
+
+
+module.exports.Geolocation13 = [
+    {
+        id: 13,
+        worker_id: 4
+    },
     [
         16.517536640167236,
         48.20904545187872
@@ -293,7 +380,13 @@ module.exports.Geolocation02 = [
     [
         16.517751216888428,
         48.21078998674276
-    ],
+    ]
+]
+module.exports.Geolocation14 = [
+    {
+        id: 14,
+        worker_id: 4
+    },
     [
         16.517879962921143,
         48.211161765179135
@@ -324,7 +417,11 @@ module.exports.Geolocation02 = [
     ]
 ];
 
-module.exports.Geolocation03 = [
+module.exports.Geolocation15 = [
+    {
+        id: 15,
+        worker_id: 4
+    },
     [
         16.519339084625244,
         48.21230568190004
@@ -348,7 +445,13 @@ module.exports.Geolocation03 = [
     [
         16.51918888092041,
         48.211397700094544
-    ],
+    ]
+]
+module.exports.Geolocation16 = [
+    {
+        id: 16,
+        worker_id: 4
+    },
     [
         16.519124507904053,
         48.21114746605842
@@ -380,7 +483,13 @@ module.exports.Geolocation03 = [
     [
         16.518759727478027,
         48.20831616149326
-    ],
+    ]
+]
+module.exports.Geolocation17 = [
+    {
+        id: 17,
+        worker_id: 4
+    },
     [
         16.51871681213379,
         48.207801362027205
@@ -408,7 +517,16 @@ module.exports.Geolocation03 = [
     [
         16.518373489379883,
         48.204998474152255
-    ],
+    ]
+]
+
+
+
+module.exports.Geolocation18 = [
+    {
+        id: 18,
+        worker_id: 5
+    },
     [
         16.518115997314453,
         48.204540845239244
@@ -432,7 +550,13 @@ module.exports.Geolocation03 = [
     [
         16.518845558166504,
         48.20313933125828
-    ],
+    ]
+]
+module.exports.Geolocation19 = [
+    {
+        id: 19,
+        worker_id: 5
+    },
     [
         16.519489288330075,
         48.203167933967755
@@ -464,7 +588,13 @@ module.exports.Geolocation03 = [
     [
         16.520347595214844,
         48.20577071367143
-    ],
+    ]
+]
+module.exports.Geolocation20 = [
+    {
+        id: 20,
+        worker_id: 5
+    },
     [
         16.520304679870605,
         48.206428538152274
@@ -480,7 +610,13 @@ module.exports.Geolocation03 = [
     [
         16.520562171936035,
         48.20760116083735
-    ],
+    ]
+]
+module.exports.Geolocation21 = [
+    {
+        id: 21,
+        worker_id: 5
+    },
     [
         16.520519256591797,
         48.20800156243447
