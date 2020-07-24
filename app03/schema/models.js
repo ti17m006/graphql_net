@@ -54,6 +54,4 @@ module.exports.ManagerType = new GraphQLObjectType(Manager());
 
 module.exports.WorkerType = new GraphQLObjectType(Worker());
 
-// const LocationType = new GraphQLList(new GraphQLObjectType(Location(GraphQLString)));
-
 module.exports.GeoType = new GraphQLObjectType(Geo());

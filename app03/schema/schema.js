@@ -22,6 +22,13 @@ const RootQuery = new GraphQLObjectType({
         },
         geolocation: {
             type: GeoType,
+            args: { id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return _.find(Geolocation01, { id: parseInt(args.id) });
+            }
+        },
+        worker_locations: {
+            type: GeoType,
             args: { worker_id: { type: GraphQLID } },
             resolve(parent, args) {
                 return _.find(Geolocation01, { worker_id: parseInt(args.worker_id) });
