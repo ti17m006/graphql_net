@@ -1,6 +1,6 @@
 
 const { GraphQLSchema, GraphQLObjectType } = require('graphql');
-
+const { ManagerType, WorkerType, GeoType } = require('./models-ql');
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
