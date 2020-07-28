@@ -1,4 +1,4 @@
-const { graphql } = require('graphql');
+
 const schema = require('../app03/schema/schema');
 
 const PORT = 8000;
