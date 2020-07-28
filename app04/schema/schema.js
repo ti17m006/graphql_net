@@ -38,7 +38,7 @@ const Mutations = new GraphQLObjectType({
                 });
                 manager.save()
                     .then(() => { console.log(`Manager ${manager} saved successfully`); })
-                    .catch(() => { console.log(`Manager ${manager} not saved`); });
+                    .catch(() => { console.error(`Manager ${manager} not saved`); });
                 return manager;
             }
         }

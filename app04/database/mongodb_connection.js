@@ -12,13 +12,13 @@ class Database {
             useUnifiedTopology: true
         })
             .then(() => { console.log('Successfully connected to a db\n'); })
-            .catch(() => { console.log('Failed to connect to the db\n'); });
+            .catch(() => { console.error('Failed to connect to the db\n'); });
     }
 
     disconnect = () => {
         mongoose.disconnect()
             .then(() => { console.log('The connection is closed\n'); })
-            .catch(() => { console.log('The connection failed to close\n'); });
+            .catch(() => { console.error('The connection failed to close\n'); });
     };
 }
 
